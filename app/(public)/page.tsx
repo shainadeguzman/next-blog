@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import HeroSection from "./_components/HeroSection";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 export default function Blog() {
   return (
     <>
-      <p>Blog</p>
+      <HeroSection />
     </>
   );
 }
