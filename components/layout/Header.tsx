@@ -4,16 +4,16 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-white/90 backdrop-blur">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/blog" className="text-xl font-semibold">
+        <Link href="/" className="text-xl font-semibold">
           Next<span className="text-gray-900">Blog</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
-          <Link href="/blog" className="text-black font-medium">
+          <Link href="/" className="text-black font-medium">
             Home
           </Link>
           <Link
-            href="blog"
+            href="/blog"
             className="text-gray-600 hover:text-black transition"
           >
             Blog
