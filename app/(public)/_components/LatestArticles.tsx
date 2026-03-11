@@ -10,10 +10,10 @@ export default function LatestArticles() {
         title="Latest Articles"
         action={
           <Link
-            href="/categories"
+            href="/blog"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
-            Browse categories
+            See all latest posts
           </Link>
         }
       />
