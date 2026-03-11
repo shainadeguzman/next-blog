@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <section>
-      <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
         <Link
           href="/blog"
           className="text-sm font-medium text-gray-600 hover:text-black"
@@ -13,7 +13,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 py-12">
+      <div className="max-w-4xl mx-auto px-6 py-10">
         <p className="text-sm font-medium text-gray-500">Frontend</p>
         <h1 className="text-4xl font-bold mt-2">
           Building a modern blog UI with Tailwind
