@@ -1,6 +1,6 @@
 import Hero from "./_components/Hero";
 import FeaturedArticle from "./_components/FeaturedArticle";
-import BlogPosts from "./_components/BlogPosts";
+import LatestArticles from "./_components/LatestArticles";
 import NewsLetter from "./_components/NewsLetter";
 
 export default function Page() {
@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <Hero />
       <FeaturedArticle />
-      <BlogPosts />
+      <LatestArticles />
       <NewsLetter />
     </>
   );

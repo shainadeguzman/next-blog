@@ -1,23 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import SectionHeader from "@/components/ui/SectionHeader";
 
 export default function HeroSection() {
   return (
     <section className="max-w-7xl mx-auto px-6 pb-16">
-      <div className="flex items-end justify-between gap-4 mb-8">
-        <div>
-          <p className="text-sm font-medium text-gray-500">Editor’s pick</p>
-          <h2 className="text-2xl md:text-3xl font-semibold mt-1">
-            Featured Article
-          </h2>
-        </div>
-        <Link
-          href="/blog"
-          className="text-sm font-medium text-gray-700 hover:text-black"
-        >
-          View all articles
-        </Link>
-      </div>
+      <SectionHeader
+        label="Editor's Pick"
+        title="Featured Article"
+        action={
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-gray-700 hover:text-black"
+          >
+            View all articles
+          </Link>
+        }
+      />
 
       <div className="grid lg:grid-cols-2 gap-6 rounded-3xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
         <Image
