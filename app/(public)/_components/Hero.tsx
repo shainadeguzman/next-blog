@@ -19,16 +19,16 @@ export default function HeroSection() {
             frontend architecture, and developer productivity.
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          <div className="mt-8 flex flex-row gap-3">
             <Link
               href="/blog"
-              className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition"
+              className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition w-max block"
             >
               Explore Blogs
             </Link>
             <Link
               href="/about"
-              className="border border-gray-300 bg-white px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
+              className="border border-gray-300 bg-white px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition w-max block"
             >
               Learn More
             </Link>
