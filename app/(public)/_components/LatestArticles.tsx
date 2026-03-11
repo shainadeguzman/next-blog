@@ -11,7 +11,7 @@ export default function LatestArticles() {
         title="Latest Articles"
         action={
           <Link
-            href="/blog"
+            href="/blog?filter=latest"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
             See all latest posts
