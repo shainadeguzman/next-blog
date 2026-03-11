@@ -36,7 +36,7 @@ export default function Header() {
           href="/blog"
           className="inline-flex items-center rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 transition"
         >
-          Explore Articles
+          Start Reading
         </Link>
       </div>
     </header>

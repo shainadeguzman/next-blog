@@ -13,7 +13,7 @@ export default function HeroSection() {
             href="/blog"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
-            View all articles
+            See all posts
           </Link>
         }
       />
