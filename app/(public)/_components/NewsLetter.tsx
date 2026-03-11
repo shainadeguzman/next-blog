@@ -2,9 +2,9 @@ export default function NewsLetter() {
   return (
     <section className="border-t border-gray-200 bg-white">
       <div className="max-w-7xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl font-semibold">Get new articles in your inbox</h2>
+        <h2 className="text-3xl font-semibold">Subscribe to our newsletter</h2>
         <p className="text-gray-600 mt-3">
-          Subscribe for practical frontend articles, design notes, and useful ideas.
+          Get new articles, ideas, and frontend notes directly in your inbox.
         </p>
 
         <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3">

@@ -8,13 +8,13 @@ export default function LatestArticles() {
     <section className="max-w-7xl mx-auto px-6 pb-20">
       <SectionHeader
         label="Fresh content"
-        title="Latest Articles"
+        title="Latest Blogs"
         action={
           <Link
             href="/blog?filter=latest"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
-            View latest articles
+            See all latest blogs
           </Link>
         }
       />

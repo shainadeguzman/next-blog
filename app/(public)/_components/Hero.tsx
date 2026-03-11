@@ -11,7 +11,7 @@ export default function HeroSection() {
           </span>
 
           <h1 className="mt-6 text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
-            A clean reading platform for frontend developers
+            A clean modern blog platform for developers
           </h1>
 
           <p className="text-gray-600 mt-6 max-w-xl text-base leading-8">
@@ -24,7 +24,7 @@ export default function HeroSection() {
               href="/blog"
               className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition"
             >
-              Browse Articles
+              Explore Blogs
             </Link>
             <Link
               href="/about"

@@ -25,8 +25,8 @@ export default function Page() {
     <section className="max-w-7xl mx-auto px-6 py-16">
       <SectionHeader
         label="About"
-        title="A focused publication for frontend learning and practical ideas"
-        description="Next Blog is a content-focused publication for developers who want a cleaner reading experience. It shares articles about Next.js, React, UI design, productivity, and modern frontend workflows."
+        title="A simple blog for frontend learning and ideas"
+        description="Next Blog is a content-focused blog platform designed for developers who want a clean reading experience. It shares articles about Next.js, React, UI design, productivity, and modern frontend workflows."
         size="lg"
       />
       <CardGrid classes="mt-12">

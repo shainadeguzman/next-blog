@@ -16,7 +16,7 @@ export default function Header() {
             href="/blog"
             className="text-gray-600 hover:text-black transition"
           >
-            Articles
+            Blog
           </Link>
           <Link
             href="/categories"
@@ -36,7 +36,7 @@ export default function Header() {
           href="/blog"
           className="inline-flex items-center rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 transition"
         >
-          Browse Articles
+          Start Reading
         </Link>
       </div>
     </header>
