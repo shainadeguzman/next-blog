@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function BlogCard() {
   return (
     <article className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
@@ -7,12 +9,12 @@ export default function BlogCard() {
         Learn how the Next.js App Router works and how layouts improve
         application structure.
       </p>
-      <a
-        href="article-app-router.html"
+      <Link
+        href="/blog/test"
         className="mt-5 inline-block text-sm font-medium text-black hover:underline"
       >
         Read more &rarr;
-      </a>
+      </Link>
     </article>
   );
 }

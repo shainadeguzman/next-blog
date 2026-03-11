@@ -41,7 +41,7 @@ export default function HeroSection() {
           </p>
 
           <Link
-            href="/article-tailwind-ui"
+            href="/blog/test"
             className="mt-6 inline-flex w-fit items-center rounded-lg bg-black px-5 py-3 text-sm font-medium text-white hover:bg-gray-800 transition"
           >
             Read Article
