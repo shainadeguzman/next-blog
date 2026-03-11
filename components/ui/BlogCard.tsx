@@ -11,6 +11,7 @@ export default function BlogCard() {
       </p>
       <Link
         href="/blog/test"
+        scroll={true}
         className="mt-5 inline-block text-sm font-medium text-black hover:underline"
       >
         Read more &rarr;
