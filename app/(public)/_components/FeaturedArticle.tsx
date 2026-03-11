@@ -13,7 +13,7 @@ export default function HeroSection() {
             href="/blog"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
-            See all posts
+            View all articles
           </Link>
         }
       />
@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="grid lg:grid-cols-2 gap-6 rounded-3xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
         <Image
           src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
-          alt="Blog UI design"
+          alt="Article layout design"
           className="h-80 w-full rounded-2xl object-cover"
           width={1200}
           height={420}
@@ -31,11 +31,11 @@ export default function HeroSection() {
           <span className="text-sm font-medium text-gray-500">Frontend</span>
 
           <h3 className="text-3xl font-semibold mt-3">
-            Building a modern blog UI with Tailwind
+            Building a modern article layout with Tailwind
           </h3>
 
           <p className="text-gray-600 mt-4 max-w-2xl leading-8">
-            Learn how to design clean, content-focused blog layouts using
+            Learn how to design clean, content-focused article layouts using
             spacing, typography, hierarchy, and simple UI patterns that feel
             polished.
           </p>
@@ -44,7 +44,7 @@ export default function HeroSection() {
             href="/article-tailwind-ui"
             className="mt-6 inline-flex w-fit items-center rounded-lg bg-black px-5 py-3 text-sm font-medium text-white hover:bg-gray-800 transition"
           >
-            Read Article
+            Read the article
           </Link>
         </div>
       </div>

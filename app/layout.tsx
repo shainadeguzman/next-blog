@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: "Next Blog", // used when a page does not define a title
   },
   description:
-    "A clean and modern blog about Next.js, React, and frontend development.",
+    "A clean, modern publication about Next.js, React, UI design, and frontend development.",
 };
 
 export default function RootLayout({

@@ -5,7 +5,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-semibold">
-          Next<span className="text-gray-900">Blog</span>
+          Next <span className="text-gray-900">Blog</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
@@ -16,7 +16,7 @@ export default function Header() {
             href="/blog"
             className="text-gray-600 hover:text-black transition"
           >
-            Blog
+            Articles
           </Link>
           <Link
             href="/categories"
@@ -36,7 +36,7 @@ export default function Header() {
           href="/blog"
           className="inline-flex items-center rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 transition"
         >
-          Start Reading
+          Browse Articles
         </Link>
       </div>
     </header>

@@ -11,7 +11,7 @@ export default function BlogCard() {
         href="article-app-router.html"
         className="mt-5 inline-block text-sm font-medium text-black hover:underline"
       >
-        Read more →
+        Read article &rarr;
       </a>
     </article>
   );

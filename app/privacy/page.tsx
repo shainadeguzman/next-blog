@@ -4,13 +4,13 @@ export default function Page() {
   return (
     <section className="max-w-4xl mx-auto px-6 py-16">
       <Link href="/" className="text-sm text-gray-600 hover:text-black">
-        ← Back to Home
+        &larr; Back to Home
       </Link>
 
       <h1 className="text-4xl font-bold mt-4">Privacy Policy</h1>
 
       <p className="text-gray-600 mt-6 leading-8">
-        At NextBlog, your privacy is important to us. This Privacy Policy
+        At Next Blog, your privacy is important to us. This Privacy Policy
         explains how we collect, use, and protect your information when you
         visit and interact with our website.
       </p>

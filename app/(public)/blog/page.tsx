@@ -9,7 +9,7 @@ export default async function Page({
 }) {
   const filter = (await searchParams).filter;
   const isLatest = filter === "latest";
-  const title = isLatest ? "Latest Blogs" : "All Blogs";
+  const title = isLatest ? "Latest Articles" : "All Articles";
   const description = isLatest
     ? "Discover the latest tutorials, design notes, frontend ideas, and practical guides for modern web development."
     : "Explore tutorials, design notes, frontend ideas, and practical guides for modern web development.";
@@ -17,7 +17,7 @@ export default async function Page({
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       <SectionHeader
-        label="Blog"
+        label="Articles"
         title={title}
         description={description}
         size="lg"
