@@ -23,8 +23,8 @@ export default function Page() {
         <Image
           src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80"
           alt="Modern blog UI"
-          className="w-full `h-95 object-cover rounded-3xl mt-8"
-          width={1200}
+          className="w-full h-95 object-cover rounded-3xl mt-8"
+          width={1000}
           height={420}
         />
 
