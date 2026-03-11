@@ -1,6 +1,13 @@
 import CardGrid from "@/components/ui/CardGrid";
 import CategoryCard from "@/components/ui/CategoryCard";
 import SectionHeader from "@/components/ui/SectionHeader";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Categories",
+  description:
+    "Browse blog categories including Next.js, React, CSS, and other topics in modern web development.",
+};
 
 export default function Page() {
   return (

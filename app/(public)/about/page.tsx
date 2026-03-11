@@ -2,6 +2,14 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import AboutCard from "@/components/ui/AboutCard";
 import CardGrid from "@/components/ui/CardGrid";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn more about this blog, its purpose, and the ideas behind the tutorials and guides on modern web development.",
+};
+
 const aboutCards = [
   {
     title: "Clean Reading",
