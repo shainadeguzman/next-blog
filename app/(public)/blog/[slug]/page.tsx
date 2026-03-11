@@ -26,6 +26,7 @@ export default function Page() {
           className="w-full h-95 object-cover rounded-3xl mt-8"
           width={1000}
           height={420}
+          priority
         />
 
         <article className="prose prose-gray max-w-none mt-10 leading-8 text-gray-700">
