@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -9,24 +13,27 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
-          <Link href="/" className="text-black font-medium">
+          <Link
+            href="/"
+            className={`text-black font-medium ${pathname === "/" ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
+          >
             Home
           </Link>
           <Link
             href="/blog"
-            className="text-gray-600 hover:text-black transition"
+            className={`text-black font-medium ${pathname === "/blog" ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
           >
             Blog
           </Link>
           <Link
             href="/categories"
-            className="text-gray-600 hover:text-black transition"
+            className={`text-black font-medium ${pathname === "/categories" ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
           >
             Categories
           </Link>
           <Link
             href="/about"
-            className="text-gray-600 hover:text-black transition"
+            className={`text-black font-medium ${pathname === "/about" ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
           >
             About
           </Link>
