@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function BlogCard() {
   return (
     <Link
-      href="/blog"
+      href={`/categories/nextjs`}
       className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm hover:-translate-y-1 transition"
     >
       <h2 className="text-xl font-semibold">Next.js</h2>
