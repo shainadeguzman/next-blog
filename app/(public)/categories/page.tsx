@@ -1,7 +1,7 @@
 import CategoryCard from "@/components/ui/CategoryCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 
-export default function page() {
+export default function Page() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       <SectionHeader
