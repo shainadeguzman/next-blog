@@ -1,5 +1,6 @@
 import SectionHeader from "@/components/ui/SectionHeader";
 import AboutCard from "@/components/ui/AboutCard";
+import CardGrid from "@/components/ui/CardGrid";
 
 const aboutCards = [
   {
@@ -29,7 +30,7 @@ export default function Page() {
         It shares articles about Next.js, React, UI design, productivity, and modern frontend workflows."
         size="lg"
       />
-      <div className="grid md:grid-cols-3 gap-6 mt-12">
+      <CardGrid classes="mt-12">
         {aboutCards.map((card) => (
           <AboutCard
             key={card.title}
@@ -37,7 +38,7 @@ export default function Page() {
             description={card.description}
           />
         ))}
-      </div>
+      </CardGrid>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import BlogCard from "@/components/ui/BlogCard";
 import SectionHeader from "@/components/ui/SectionHeader";
+import CardGrid from "@/components/ui/CardGrid";
 import Link from "next/link";
 
 export default function LatestArticles() {
@@ -18,11 +19,11 @@ export default function LatestArticles() {
         }
       />
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <CardGrid>
         <BlogCard />
         <BlogCard />
         <BlogCard />
-      </div>
+      </CardGrid>
     </section>
   );
 }

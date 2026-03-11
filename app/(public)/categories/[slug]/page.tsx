@@ -1,5 +1,6 @@
 import BlogCard from "@/components/ui/BlogCard";
 import SectionHeader from "@/components/ui/SectionHeader";
+import CardGrid from "@/components/ui/CardGrid";
 
 export default async function Page({
   params,
@@ -16,11 +17,11 @@ export default async function Page({
         description="Explore tutorials, design notes, frontend ideas, and practical guides for modern web development."
         size="lg"
       />
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+      <CardGrid classes="mt-12">
         <BlogCard />
         <BlogCard />
         <BlogCard />
-      </div>
+      </CardGrid>
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import CardGrid from "@/components/ui/CardGrid";
 import CategoryCard from "@/components/ui/CategoryCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 
@@ -10,11 +11,11 @@ export default function Page() {
         description="Choose a category and explore articles based on your current learning focus."
         size="lg"
       />
-      <div className="grid md:grid-cols-3 gap-6 mt-12">
+      <CardGrid classes="mt-12">
         <CategoryCard />
         <CategoryCard />
         <CategoryCard />
-      </div>
+      </CardGrid>
     </section>
   );
 }
