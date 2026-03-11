@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${roboto.className} antialiased bg-gray-50 text-gray-800`}
       >
-        <NextTopLoader color="#0f172b" />
+        <NextTopLoader color="#0f172b" showSpinner={false} />
         {children}
       </body>
     </html>
