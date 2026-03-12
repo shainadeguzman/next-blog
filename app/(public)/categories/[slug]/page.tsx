@@ -12,7 +12,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata,
 ): Promise<Metadata> {
   const slug = (await params).slug;
-  console.log(slug);
+  // console.log(slug);
 
   // fetch post information
   /* const post = await fetch(`https://api.vercel.app/blog/${slug}`).then((res) =>
