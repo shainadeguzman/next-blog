@@ -1,5 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const slug = (await params).slug;
+  // console.log(slug);
+
+  // fetch post information
+  /* const post = await fetch(`https://api.vercel.app/blog/${slug}`).then((res) =>
+    res.json(),
+  ); */
+
+  return {
+    title: slug,
+    description: "Building a modern blog UI with Tailwind",
+  };
+}
 
 export default function Page() {
   return (
