@@ -8,18 +8,7 @@ export default async function HeroSection() {
 
   return (
     <section className="max-w-7xl mx-auto px-6 pb-16">
-      <SectionHeader
-        label="Editor's Pick"
-        title="Featured Article"
-        action={
-          <Link
-            href="/blog"
-            className="text-sm font-medium text-gray-700 hover:text-black"
-          >
-            See all blogs
-          </Link>
-        }
-      />
+      <SectionHeader label="Editor's Pick" title="Featured Article" />
 
       {featuredBlogs.map((blog) => (
         <div
