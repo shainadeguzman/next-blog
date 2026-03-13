@@ -21,13 +21,13 @@ export default function Header() {
           </Link>
           <Link
             href="/blog"
-            className={`text-black font-medium ${pathname === "/blog" ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
+            className={`text-black font-medium ${pathname.startsWith("/blog") ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
           >
             Blog
           </Link>
           <Link
             href="/categories"
-            className={`text-black font-medium ${pathname === "/categories" ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
+            className={`text-black font-medium ${pathname.startsWith("/categories") ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
           >
             Categories
           </Link>
