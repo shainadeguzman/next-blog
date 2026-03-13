@@ -2,8 +2,11 @@ import BlogCard from "@/components/ui/BlogCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CardGrid from "@/components/ui/CardGrid";
 import Link from "next/link";
+import { fetchBlogs } from "@/lib/data/blogs";
 
-export default function LatestArticles() {
+export default async function LatestArticles() {
+  const blogs = await fetchBlogs();
+
   return (
     <section className="max-w-7xl mx-auto px-6 pb-20">
       <SectionHeader
@@ -20,9 +23,9 @@ export default function LatestArticles() {
       />
 
       <CardGrid>
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogs.map((blog) => (
+          <BlogCard key={blog.id} blog={blog} />
+        ))}
       </CardGrid>
     </section>
   );

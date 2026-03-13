@@ -48,9 +48,9 @@ export default async function Page({
         size="lg"
       />
       <CardGrid classes="mt-12">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogs.map((blog) => (
+          <BlogCard key={blog.id} blog={blog} />
+        ))}
       </CardGrid>
     </section>
   );
