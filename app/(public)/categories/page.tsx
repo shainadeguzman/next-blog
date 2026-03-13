@@ -2,6 +2,7 @@ import CardGrid from "@/components/ui/CardGrid";
 import CategoryCard from "@/components/ui/CategoryCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 import type { Metadata } from "next";
+import { fetchCategories } from "@/lib/data/categories";
 
 export const metadata: Metadata = {
   title: "Categories",
@@ -9,7 +10,9 @@ export const metadata: Metadata = {
     "Browse blog categories including Next.js, React, CSS, and other topics in modern web development.",
 };
 
-export default function Page() {
+export default async function Page() {
+  const categories = await fetchCategories();
+
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       <SectionHeader
@@ -19,9 +22,9 @@ export default function Page() {
         size="lg"
       />
       <CardGrid classes="mt-12">
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
+        {categories.map((cat) => (
+          <CategoryCard key={cat.id} category={cat} />
+        ))}
       </CardGrid>
     </section>
   );
