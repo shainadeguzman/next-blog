@@ -26,12 +26,6 @@ export default function Header() {
             Blog
           </Link>
           <Link
-            href="/categories"
-            className={`text-black font-medium ${pathname.startsWith("/categories") ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
-          >
-            Categories
-          </Link>
-          <Link
             href="/about"
             className={`text-black font-medium ${pathname === "/about" ? "text-black font-medium" : "text-gray-500 hover:text-black transition"}`}
           >
