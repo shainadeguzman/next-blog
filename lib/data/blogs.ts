@@ -79,3 +79,28 @@ export async function fetchLatestBlogs(limit = 3) {
     throw new Error("Failed to fetch latest blogs.");
   }
 }
+
+export async function fetchFeaturedBlogs(limit = 1) {
+  try {
+    const { rows } = await pool.query(
+      `
+      SELECT
+        posts.*,
+        categories.name AS category,
+        categories.slug AS category_slug
+      FROM posts
+      LEFT JOIN categories
+        ON posts.category_id = categories.id
+      WHERE posts.featured = true
+      ORDER BY posts.published_at DESC
+      LIMIT $1
+      `,
+      [limit],
+    );
+
+    return rows;
+  } catch (err) {
+    console.error("Error:", err);
+    throw new Error("Failed to fetch featured blogs.");
+  }
+}
