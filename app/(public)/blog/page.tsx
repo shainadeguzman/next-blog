@@ -12,9 +12,9 @@ export async function generateMetadata({
   searchParams,
 }: Props): Promise<Metadata> {
   const params = await searchParams;
-  const filter = params.filter;
+  const sort = params.sort;
 
-  const isLatest = filter === "latest";
+  const isLatest = sort === "latest";
 
   return {
     title: isLatest ? "Latest Blogs" : "Blog",
@@ -29,8 +29,8 @@ export default async function Page({
 }: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-  const filter = (await searchParams).filter;
-  const isLatest = filter === "latest";
+  const sort = (await searchParams).sort;
+  const isLatest = sort === "latest";
   const title = isLatest ? "Latest Blogs" : "All Blogs";
   const description = isLatest
     ? "Discover the latest tutorials, design notes, frontend ideas, and practical guides for modern web development."

@@ -14,7 +14,7 @@ export default async function LatestArticles() {
         title="Latest Blogs"
         action={
           <Link
-            href="/blog?filter=latest"
+            href="/blog?sort=latest"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
             See all latest blogs
