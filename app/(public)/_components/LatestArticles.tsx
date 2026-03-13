@@ -2,10 +2,10 @@ import BlogCard from "@/components/ui/BlogCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CardGrid from "@/components/ui/CardGrid";
 import Link from "next/link";
-import { fetchBlogs } from "@/lib/data/blogs";
+import { fetchLatestBlogs } from "@/lib/data/blogs";
 
 export default async function LatestArticles() {
-  const blogs = await fetchBlogs();
+  const latestBlogs = await fetchLatestBlogs();
 
   return (
     <section className="max-w-7xl mx-auto px-6 pb-20">
@@ -23,7 +23,7 @@ export default async function LatestArticles() {
       />
 
       <CardGrid>
-        {blogs.map((blog) => (
+        {latestBlogs.map((blog) => (
           <BlogCard key={blog.id} blog={blog} />
         ))}
       </CardGrid>

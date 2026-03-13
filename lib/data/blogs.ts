@@ -55,3 +55,27 @@ export async function fetchCategoryPageData(slug: string) {
     throw new Error("Failed to fetch category page data.");
   }
 }
+
+export async function fetchLatestBlogs(limit = 3) {
+  try {
+    const { rows } = await pool.query(
+      `
+      SELECT
+        posts.*,
+        categories.name AS category,
+        categories.slug AS category_slug
+      FROM posts
+      LEFT JOIN categories
+        ON posts.category_id = categories.id
+      ORDER BY posts.published_at DESC
+      LIMIT $1
+      `,
+      [limit],
+    );
+
+    return rows;
+  } catch (err) {
+    console.error("Error:", err);
+    throw new Error("Failed to fetch latest blogs.");
+  }
+}
